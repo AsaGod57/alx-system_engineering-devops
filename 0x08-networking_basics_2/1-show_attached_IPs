@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Show attached IPs.
+# Auth: Godsway Asamoah
+ifconfig | grep "inet " | tr ":" " " | awk '{print $3}'
